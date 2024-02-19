@@ -1,0 +1,161 @@
+
+<?php
+include('includes/db_conn.php');
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration</title>
+ <link rel="stylesheet" href="css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+    <style>
+         body {
+        background-color: rgb(233, 241, 241);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+         }
+       p.btn1 a {
+         float: right;
+         background: rgb(122, 126, 124);
+         padding: 10px 15px;
+         color:  black;
+         border-radius: 5px;
+         margin-right: 10px;
+         border: none;
+         font-family: sans-serif;
+         text-decoration: none;
+         }
+
+       p.btn1 a:hover{
+         opacity: .7;
+        }
+       h1 {
+          text-align: center;
+          color: black;
+          margin-top: 1px;
+          font-size: x-large;
+        }
+
+       h4 {
+        text-align: center;
+        margin-bottom: 1px;
+        color: red;
+        }
+
+       h5{
+         text-align: center;
+         margin-top: 1px;
+         color: black;
+         font-size: xx-large; 
+        }
+        p.btn2 a {
+         float: right;
+         background: rgb(122, 126, 124);
+         padding: 10px 15px;
+         color:  black;
+         border-radius: 5px;
+         margin-right: 10px;
+         border: none;
+         font-family: sans-serif;
+         text-decoration: none;
+         }
+
+       p.btn2 a:hover{
+         opacity: .7;
+         }
+
+         p.btn3 a {
+         float: right;
+         background: rgb(122, 126, 124);
+         padding: 10px 15px;
+         color:  black;
+         border-radius: 5px;
+         margin-right: 10px;
+         border: none;
+         font-family: sans-serif;
+         text-decoration: none;
+         }
+
+       p.btn3 a:hover{
+         opacity: .7;
+         }
+
+         p.btn4 a {
+         float: right;
+         background: rgb(122, 126, 124);
+         padding: 10px 15px;
+         color:  black;
+         border-radius: 5px;
+         margin-right: 10px;
+         border: none;
+         font-family: sans-serif;
+         text-decoration: none;
+         }
+
+       p.btn4 a:hover{
+         opacity: .7;
+         }
+         p.btn5 a {
+         float: right;
+         background: rgb(122, 126, 124);
+         padding: 10px 15px;
+         color:  black;
+         border-radius: 5px;
+         margin-right: 10px;
+         border: none;
+         font-family: sans-serif;
+         text-decoration: none;
+         }
+
+       p.btn5 a:hover{
+         opacity: .7;
+         }
+      
+         footer {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Student Registration Form</h1>
+<form id="registrationForm" method="POST" action="submit.php">
+<label for="id">ID:</label>
+<input type="text" name="id" id="id">
+<label for="name">name:</label>
+<input type="name" name="name" id="name">
+<label for="coursename">Courses of Interest:</label>
+<input type="text" name="course" id="coursename">
+<label for="mode">Mode of Study:</label>
+<select name="mode" id="mode">
+<option value="full-time">Full-time</option>
+<option value="part-time">Part-time</option>
+</select>
+<label for="campus">Preferred Campus:</label>
+<input type="text" name="campus" id="campus">
+
+<input type="submit">
+</form>
+</body>
+</html>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  Select image to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
+
+</body>
+</html>
